@@ -82,7 +82,7 @@ const NavBar: React.FC = () => {
             <button className="personal-btn" onClick={() => navigat("/SingIn")}>
               <img
                 src="/images/header_images/PersonalIcon.svg"
-                alt="PersonalIcon"
+                alt="personalIcon"
               />
             </button>
             {showModal && (
