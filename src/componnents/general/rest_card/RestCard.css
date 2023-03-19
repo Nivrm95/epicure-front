@@ -1,0 +1,74 @@
+.rest-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  gap: 8px;
+  background: #f9f4ea;
+}
+
+.rest-name {
+  display: flex;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  height: 47px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.rest-chef-name {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.rest-img {
+  width: 379px;
+  height: 236px;
+  object-fit: cover;
+}
+
+@media (max-width: 391px) {
+  .rest-card {
+    width: 245px;
+    height: 232.8px;
+    padding: 0px;
+    justify-content: flex-start;
+  }
+  .rest-img {
+    width: 245px;
+    height: 151.8px;
+  }
+  .rating-img{
+    display: none;
+  }
+  .rest-name {
+    height: 21px;
+    font-family: "Helvetica Neue light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2.67px;
+  }
+  .rest-chef-name {
+    display: flex;
+    width: 104px;
+    height: 20px;
+    font-family: "Helvetica Neue light";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

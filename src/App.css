@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Helvetica Neue Bold";
+    src: url(./fonts/Helvetica-Neu-Bold.ttf);
+}
+@font-face {
+    font-family: "Helvetica Neue Medium";
+    src: url(./fonts/HelveticaNeue-Medium.ttf);
+}
+@font-face {
+    font-family: "Helvetica Neue Light";
+    src: url(./fonts/HelveticaNeue-Light.ttf);
+}
+@font-face {
+    font-family: "Helvetica Neue Thin";
+    src: url(./fonts/HelveticaNeue-Thin.ttf);
+}

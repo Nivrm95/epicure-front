@@ -1,0 +1,34 @@
+.add-rest-form{
+    background: #ffffff;
+    z-index: 2;
+    position: absolute;
+    width: 576px;
+    height: 1115px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 0px 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 576px;
+    overflow-y: auto;
+}
+
+.buttons-form{
+    display: flex;
+    gap: 25px;
+}
+.btu-singel:hover{
+    font-weight: bold;
+    border-bottom: chocolate solid 1px;
+}
+
+.add-rest-form .title-modal{
+margin-top: 30px;
+}
+
+.add-rest-form .title-modal{
+   margin-top: 0px; 
+}

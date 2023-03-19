@@ -1,0 +1,26 @@
+.nav-bar-single-rest {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.92px;
+  color: #000000;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px;
+  height: 29px;
+}
+
+.undeline {
+  border-bottom: 1.8px solid rgba(222, 146, 0, 0.9);
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+.notActive {
+  all: unset;
+  cursor: pointer;
+}

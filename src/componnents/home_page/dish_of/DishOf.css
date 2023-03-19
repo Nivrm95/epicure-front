@@ -1,0 +1,30 @@
+.dish-of-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.dish-of-titel {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 2.14px;
+  text-transform: uppercase;
+}
+.dish-of-main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.dish-of-all-cards {
+  display: flex;
+  gap: 25px;
+}

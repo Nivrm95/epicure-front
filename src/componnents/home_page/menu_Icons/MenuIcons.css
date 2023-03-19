@@ -1,0 +1,24 @@
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 265px;
+  background: #fafafa;
+}
+.icons-box {
+  display: flex;
+  flex-direction: row;
+  padding: 39px 476px;
+  gap: 32px;
+}
+
+.icons-titel {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 2.14px;
+  text-transform: uppercase;
+}

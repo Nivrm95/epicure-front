@@ -1,0 +1,52 @@
+@keyframes increase-size {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+  to {
+    width: 497px;
+    height: 586px;
+  }
+}
+
+.modal-shopcart {
+  display: flex;
+  position: absolute;
+  width: 497px;
+  height: 586px;
+  right: 0px;
+  top: 65px;
+  background: #ffffff;
+  box-shadow: 2px 4px 10px rgb(175 175 175 / 25%);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  animation-name: increase-size;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history-btu {
+  width: 206px;
+  height: 48px;
+  position: absolute;
+  bottom: 44px;
+  border: 1px solid #000000;
+  padding: 5px 15px;
+  gap: 10px;
+  font-family: "Helvetica Neue medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+}

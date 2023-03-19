@@ -1,0 +1,12 @@
+.rest-page-all-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}

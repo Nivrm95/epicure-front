@@ -1,0 +1,60 @@
+.rest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.rest-titel {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 2.14px;
+  text-transform: uppercase;
+}
+.rest-container-main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.all-cards {
+  display: flex;
+  gap: 25px;
+}
+
+.all-restaurants-btn {
+  display: flex;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.all-restaurants-img {
+  margin-top: 5px;
+}
+
+@media (max-width: 391px) {
+  .rest-container-main-box{
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .rest-titel {
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 1.25px;;
+  }
+  .all-cards {
+    overflow: scroll;
+    width: 350px;
+  }
+  .all-restaurants-btn{
+    font-size: 16px;
+    line-height: 35px;
+  }
+}

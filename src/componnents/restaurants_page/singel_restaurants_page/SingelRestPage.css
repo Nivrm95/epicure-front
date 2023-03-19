@@ -1,0 +1,143 @@
+.all-dishs-singel-rest {
+  padding-top: 8px;
+  padding-bottom: 49px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  width: 1184px;
+  justify-content: center;
+}
+.container-singel-rest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#DeleteRest{
+  margin: 10px;
+  background-color: red;
+  border: #000000 solid 1px;
+  color: #f9f4ea;
+  font-size: larger;
+  font-weight: 400;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+/* ////////rest box/////////// */
+.rest-card.singel-rest-card {
+  height: auto;
+}
+.singel-rest-card.rest-card {
+  background: rgb(255, 255, 255);
+}
+
+.singel-rest-card img {
+  width: 1186px;
+  height: 425px;
+}
+
+.singel-rest-card img {
+  width: 1186px;
+  height: 425px;
+}
+.singel-rest-card.rest-name {
+  font-family: "Helvetica Neue medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  height: 64px;
+}
+.singel-rest-card .rest-chef-name {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 36px;
+  height: 36px;
+  padding-bottom: 32px;
+}
+.singel-rest-card .open-now-box {
+  display: flex;
+  width: 118px;
+  height: 20px;
+}
+.singel-rest-card .open-now-icon {
+  width: 17px;
+  height: 17px;
+}
+.open-now-box {
+  gap: 8px;
+}
+.rest-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ////////dich card box/////////// */
+.singel-dish-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #f9f4ea;
+  position: relative;
+ 
+}
+
+.singel-dish-card.dish-img {
+  width: 272px;
+  height: 171.71px;
+  object-fit: cover;
+}
+.singel-dish-card.dish-info {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(4, 76px);
+
+}
+
+.singel-dish-card .icons {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: -15px;
+}
+
+.singel-dish-card .dish-name {
+  font-family: "Helvetica Neue medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  color: #000000;
+  white-space: nowrap;
+  margin: 0px;
+}
+.singel-dish-card .description {
+  width: 222px;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.singel-dish-card.dish-info .price {
+  width: 224px;
+  bottom: 5px;
+  position: absolute;
+}
+hr {
+  width: 112px;
+  height: 0px;
+}

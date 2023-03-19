@@ -1,0 +1,34 @@
+.chef-week-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 80px;
+  padding-bottom: 125px;
+  gap: 45px;
+  height: 924px;
+  align-items: center;
+}
+.chef-card-all-rests {
+  display: flex;
+  width: 1183px;
+  gap:40px;
+}
+.chef-week-titel {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 2.14px;
+  text-transform: uppercase;
+}
+.chef-week-main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.chef-card-info {
+  display: flex;
+  gap: 63px;
+}

@@ -1,0 +1,148 @@
+/*/////////////// genral /////////////////*/
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  height: 64px;
+  border-bottom: 0.2px solid #979797;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+
+
+/*/ ////////////// left nav bar /////////////////*/
+.left-nav-bar {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Helvetica Neue Light";
+  font-weight: 200;
+  font-size: 18px;
+  gap: 10px;
+}
+
+/*/////////////// right nav bar /////////////////*/
+.right-nav-bar {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  gap: 25px;
+}
+
+.logInUesr{
+  font-family: "Helvetica Neue Light";
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  width: fit-content;
+  top: 3%;
+  left: 59%;
+  color: #d2a05e;
+  right: -5%;
+}
+/* search nav bar */
+.search-box {
+  position: relative;
+  width: 410px;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: -7px;
+}
+.search-btn {
+  position: absolute;
+  right: 15px;
+}
+.search-text {
+  position: absolute;
+  font-family: "Helvetica Neue Light";
+  font-weight: 200;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  width: 0px;
+  height: 22px;
+  transition: all 1.5s ease;
+  right: 0;
+}
+/*  (showSearchInput).search-text + className = .show*/
+.show {
+  border: 0.5px solid #000000;
+  width: 410px;
+  height: 22px;
+  padding: 6px 12px;
+}
+
+/* navlink */
+.undeline {
+  border-bottom: 1.8px solid rgba(222, 146, 0, 0.9);
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+.notActive {
+  all: unset;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+}
+.main-logo-mobile {
+  display: none;
+}
+/* ////////////////// media queries ////////////////// */
+@media (max-width: 391px) {
+  .main-logo-mobile {
+    display: flex;
+    margin-left: 65px;
+  }
+  .logInUesr{
+    top: 3%;
+    left: 15%;
+  }
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 50px;
+  }
+  .left-nav-bar {
+    display: none;
+  }
+  .right-nav-bar {
+    width: 100px;
+    height: 20px;
+    gap: 20px;
+  }
+  .search-box {
+    width: 410px;
+  }
+  .show {
+    width: 220px;
+    padding: 7px 8px;
+  }
+  .search-text{
+    font-size: 12px;
+  }
+  .img {
+    width: 19.13px;
+    height: 20px;
+  }
+  .search-btn {
+    position: absolute;
+    right: 5px;
+  }
+}

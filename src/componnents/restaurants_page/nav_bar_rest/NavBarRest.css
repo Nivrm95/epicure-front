@@ -1,0 +1,39 @@
+.nav-bar-rest-all-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  height: 110px;
+  background: #ffffff;
+}
+
+.nav-bar-rest-btn {
+  display: flex;
+  width: fit-content;
+  height: 22px;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.92px;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nav-bar-rest-btn-add-rest{
+  background-color: red;
+  color: aliceblue;
+  font-size: larger;
+  padding: 5px;
+  text-align: center;
+  border: #000000 solid 1px;
+  border-radius: 5px;
+}

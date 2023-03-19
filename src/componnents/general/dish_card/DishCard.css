@@ -1,0 +1,79 @@
+.dish-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  gap: 8px;
+  background: #f9f4ea;
+  position: relative;
+}
+.dish-info {
+  display: grid;
+  grid-template-rows: repeat(5, 76px);
+}
+.description {
+  width: 295px;
+  height: 123px;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  color: #000000;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  gap:40px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 40px;
+}
+.icon-img {
+  width: 40px;
+  height: 31px;
+}
+.price {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 287px;
+  height: 30px;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  bottom: 5px;
+}
+hr {
+  width: 112px;
+  height: 0px;
+}
+.dish-name {
+margin-top: 15px;
+height: 94px;
+font-family: "Helvetica Neue light";
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 47px;
+grid-row-start: 1;
+text-align: center;
+letter-spacing: 2.67px;
+justify-content: center;
+display: flex;
+align-items: center;
+}

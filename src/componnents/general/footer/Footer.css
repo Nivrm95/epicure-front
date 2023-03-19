@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 84px;
+  left: 0px;
+  top: 1px;
+  gap: 40px;
+  background: #ffffff;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1.92px;
+  color: #000000;
+  border-top: 0.2px solid #979797; ;
+}

@@ -1,0 +1,17 @@
+.filter-barrRest-all-btn {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background: #fafafa;
+  gap: 47px;
+  margin-bottom: 40px;
+}
+.filter-barrRest-btn {
+  width: 57px;
+  height: 22px;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 22px;
+}

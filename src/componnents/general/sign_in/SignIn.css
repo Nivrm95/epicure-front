@@ -1,0 +1,128 @@
+.sing-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  background: #ffffff;
+}
+.sing-in-card {
+  width: 573px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  background: #ffffff;
+  box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
+}
+.sing-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.sing-in-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.sing-in-title {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sing-in-title-text {
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  color: #000000;
+}
+.login-btu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 24px;
+  width: 206px;
+  height: 48px;
+  background: #979797;
+  font-family: "Helvetica Neue medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.forget-btu {
+  margin-top: -12px;
+  font-family: "Helvetica Neue medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  color: #000000;
+}
+.or {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Helvetica Neue light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1.97px;
+  color: #979797;
+}
+
+.sing-in-hr {
+  width: 126.5px;
+  height: 0px;
+  border: -0.5px solid #979797;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-btu {
+  width: 89px;
+  height: 20px;
+  font-family: "Helvetica Neue medium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2.67px;
+  text-transform: uppercase;
+  color: #000000;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 10px;
+  width: 206px;
+  height: 48px;
+}

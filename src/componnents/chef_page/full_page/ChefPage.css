@@ -1,0 +1,10 @@
+.chef-page-all-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 50px;
+}
