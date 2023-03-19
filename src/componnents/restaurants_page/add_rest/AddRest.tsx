@@ -11,8 +11,7 @@ interface IAddRestProps {
 const AddRest: React.FC<IAddRestProps> = ({ setShowAddModal }) => {
   const navigat = useNavigate();
 
-
-const handSaveRest = async (e: any) => {
+  const handSaveRest = async (e: any) => {
     e.preventDefault();
     const credentials: any = {
       id: 0,
@@ -29,7 +28,7 @@ const handSaveRest = async (e: any) => {
       popular: "",
       newRest: "",
     };
-  
+
     const inputObj = e.target;
     Object.values(inputObj).forEach((obj: any) => {
       switch (obj.name) {
@@ -65,7 +64,7 @@ const handSaveRest = async (e: any) => {
               credentials[obj.name] = "./images/rating_images/4 stars.svg";
               break;
             case "5":
-              credentials[obj.name] ="./images/rating_images/5 stars.svg";
+              credentials[obj.name] = "./images/rating_images/5 stars.svg";
               break;
             default:
               break;
@@ -77,12 +76,11 @@ const handSaveRest = async (e: any) => {
       }
       console.log(obj.value);
     });
-  
-    
+
     console.log(credentials);
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/restaurants",
+        "https://niv-epicure-back.onrender.com/restaurants",
         credentials
       );
       navigat("/RestaurantsPage");

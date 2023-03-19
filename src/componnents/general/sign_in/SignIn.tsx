@@ -13,10 +13,10 @@ const SignIn: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
-    dispatch(setCurrentUser({email: email}));
-  },[email]);
+    dispatch(setCurrentUser({ email: email }));
+  }, [email]);
 
   const emptyInputs = () => {
     setEmail("");
@@ -37,11 +37,10 @@ const SignIn: React.FC = () => {
     };
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/users/login",
+        "https://niv-epicure-back.onrender.com/users/login",
         credentials
       );
       navigat("/");
-      
     } catch (err: any) {
       console.log(err);
       alert(err.response.data);

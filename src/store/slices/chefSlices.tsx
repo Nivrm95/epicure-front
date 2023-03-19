@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { IChefProps } from "../../componnents/general/chef_card/ChefCard";
 
-
-const allChefs = fetch("http://localhost:8000/chefs")
+const allChefs = fetch("https://niv-epicure-back.onrender.com/chefs")
   .then((response) => response.json())
   .then((data) => {
     return data;

@@ -34,13 +34,15 @@ const SignUp: React.FC = () => {
       email: email,
       userName: userName,
       password: password,
-      role: selectedRole.value, 
+      role: selectedRole.value,
     };
 
     console.log(selectedRole.value);
-    
+
     try {
-     await axios.post("http://localhost:8000/users", body).then(res=>console.log(res.data));
+      await axios
+        .post("https://niv-epicure-back.onrender.com/users", body)
+        .then((res) => console.log(res.data));
       navigate(-1);
     } catch (err: any) {
       console.log(err);
@@ -74,8 +76,6 @@ const SignUp: React.FC = () => {
     setSelectedRole(selectedOption);
   };
 
-
-  
   return (
     <div>
       <NavBar />

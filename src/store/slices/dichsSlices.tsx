@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { IDishProps } from "../../componnents/general/dish_card/DishCard";
 
-const allDishes = fetch("http://localhost:8000/dishes")
+const allDishes = fetch("https://niv-epicure-back.onrender.com/dishes")
   .then((response) => response.json())
   .then((data) => {
     return data;

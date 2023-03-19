@@ -1,27 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-
-
-export interface IUserState{
-  value: IUser[],
-  logInUser: IUser
+export interface IUserState {
+  value: IUser[];
+  logInUser: IUser;
 }
 
 export interface IUser {
   reducer: any;
-  firstName: string,
-  lastName: string,
-  email: string,
-  userName: string,
-  password: string,
-  token?: string
-  role:string,
+  firstName: string;
+  lastName: string;
+  email: string;
+  userName: string;
+  password: string;
+  token?: string;
+  role: string;
 }
 
-
-
-const allUsers = fetch("http://localhost:8000/users")
+const allUsers = fetch("https://niv-epicure-back.onrender.com/users")
   .then((response) => response.json())
   .then((data) => {
     return data;
@@ -43,10 +38,10 @@ export const userSlices = createSlice({
     setCurrentUser: (state, action) => {
       const currentUser = action.payload;
       const userLogIn = users.find((u) => {
-     return u.email === currentUser.email
+        return u.email === currentUser.email;
       });
       state.value = userLogIn || {};
-      state.logInUser = userLogIn || {};;
+      state.logInUser = userLogIn || {};
     },
   },
 });

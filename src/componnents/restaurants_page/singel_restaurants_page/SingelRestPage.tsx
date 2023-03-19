@@ -75,7 +75,7 @@ const SingelRestPage: React.FC = () => {
   //   const body : any=id
   //   try {
   //         const res = await axios.delete(
-  //       `http://localhost:8000/restaurants/${id}`, body );
+  //       `https://niv-epicure-back.onrender.com/restaurants/${id}`, body );
   //     console.log("delete");
   //     if (res.data.success ){
   //     }
@@ -88,7 +88,7 @@ const SingelRestPage: React.FC = () => {
   const handleDeleteRest = async (restObj: any) => {
     try {
       const foundDishes = await axios.get(
-        `http://localhost:8000/dishes?restaurantId=${restObj._id}`
+        `https://niv-epicure-back.onrender.com/dishes?restaurantId=${restObj._id}`
       );
       console.log(foundDishes);
       console.log(foundDishes.data);
@@ -100,7 +100,7 @@ const SingelRestPage: React.FC = () => {
         )[0];
         console.log(filterObj);
         const dishRes = await axios.delete(
-          `http://localhost:8000/dishes/${filterObj._id}`,
+          `https://niv-epicure-back.onrender.com/dishes/${filterObj._id}`,
           {
             data: { ids: filterObj._id },
           }
@@ -112,7 +112,7 @@ const SingelRestPage: React.FC = () => {
       });
 
       const res = await axios.delete(
-        `http://localhost:8000/restaurants/${restObj._id}`
+        `https://niv-epicure-back.onrender.com/restaurants/${restObj._id}`
       );
       if (res.data.success) {
         console.log("Restaurant deleted");
@@ -142,13 +142,13 @@ const SingelRestPage: React.FC = () => {
           }
         />
         {logInUser.role === "admin" && (
-        <button
-          id="DeleteRest"
-          onClick={() => handleDeleteRest(selectedRestaurant)}
-        >
-          Delete Rest
-        </button>
-          )}
+          <button
+            id="DeleteRest"
+            onClick={() => handleDeleteRest(selectedRestaurant)}
+          >
+            Delete Rest
+          </button>
+        )}
         <NavBarSingelRest setSelectedTime={setSelectedTime} />
         <div className="all-dishs-singel-rest">
           {selectedTime == "all"
