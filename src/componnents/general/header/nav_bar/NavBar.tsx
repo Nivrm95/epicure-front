@@ -9,6 +9,7 @@ import ShopCart from "../../shop_cart/ShopCart";
 import HamburgerNavBar from "../hamburger_nav_bar/HamburgerNavBar";
 import { RootState } from "../../../../store/store";
 
+
 const NavBar: React.FC = () => {
   const dispatch = useDispatch();
   const navigat = useNavigate();
@@ -80,7 +81,7 @@ const NavBar: React.FC = () => {
           <div className="personal-icon">
             <button className="personal-btn" onClick={() => navigat("/SingIn")}>
               <img
-                src="/images/header_images/PersonalIcon.svg"
+                src="/images/header_images/ShoppingIcon.svg"
                 alt="PersonalIcon"
               />
             </button>
