@@ -81,7 +81,7 @@ const NavBar: React.FC = () => {
           <div className="personal-icon">
             <button className="personal-btn" onClick={() => navigat("/SingIn")}>
               <img
-                src="/images/header_images/ShoppingIcon.svg"
+                src="/images/header_images/PersonalIcon.svg"
                 alt="PersonalIcon"
               />
             </button>
