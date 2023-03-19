@@ -1,5 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IUser } from "../../../../back/src/model/users.model";
+
+
+
+
+export interface IUserState{
+  value: IUser[],
+  logInUser: IUser
+}
+
+export interface IUser {
+  reducer: any;
+  firstName: string,
+  lastName: string,
+  email: string,
+  userName: string,
+  password: string,
+  token?: string
+  role:string,
+}
 
 
 
