@@ -88,8 +88,8 @@ const AddRest: React.FC<IAddRestProps> = ({ setShowAddModal }) => {
         // "http://localhost:8000/restaurants",
         credentials
       );
-      navigat("/RestaurantsPage");
       window.location.reload();
+      navigat("/RestaurantsPage");
     } catch (err: any) {
       console.log(err);
       alert(err.response.data);
