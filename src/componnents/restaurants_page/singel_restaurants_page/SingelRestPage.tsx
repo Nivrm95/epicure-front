@@ -88,7 +88,8 @@ const SingelRestPage: React.FC = () => {
   const handleDeleteRest = async (restObj: any) => {
     try {
       const foundDishes = await axios.get(
-        `https://niv-epicure-back.onrender.com/dishes?restaurantId=${restObj._id}`
+        // `https://niv-epicure-back.onrender.com/dishes?restaurantId=${restObj._id}`
+        `http://localhost:8000/dishes?restaurantId=${restObj._id}`
       );
       console.log(foundDishes);
       console.log(foundDishes.data);
@@ -100,7 +101,8 @@ const SingelRestPage: React.FC = () => {
         )[0];
         console.log(filterObj);
         const dishRes = await axios.delete(
-          `https://niv-epicure-back.onrender.com/dishes/${filterObj._id}`,
+          // `https://niv-epicure-back.onrender.com/dishes/${filterObj._id}`,
+          `http://localhost:8000/dishes/${filterObj._id}`,
           {
             data: { ids: filterObj._id },
           }
@@ -110,9 +112,14 @@ const SingelRestPage: React.FC = () => {
           console.log("Dish deleted");
         }
       });
-
+      console.log(restObj._id);
+      
       const res = await axios.delete(
-        `https://niv-epicure-back.onrender.com/restaurants/${restObj._id}`
+        // `https://niv-epicure-back.onrender.com/restaurants/${restObj._id}`
+        `http://localhost:8000/restaurants/${restObj._id}`,
+        {
+          data: { ids: restObj._id },
+        }
       );
       if (res.data.success) {
         console.log("Restaurant deleted");

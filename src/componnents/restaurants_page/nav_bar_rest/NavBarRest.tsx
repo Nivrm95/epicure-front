@@ -19,6 +19,8 @@ const NavBarRest: React.FC = () => {
   };
 
   const logInUser = useSelector((state: RootState) => state.users.logInUser);
+  console.log(logInUser);
+  
   console.log(logInUser.role);
 
   const navBarItems: { name: string; value: string }[] = [

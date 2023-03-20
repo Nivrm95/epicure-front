@@ -3,7 +3,8 @@ import { IrestPorps } from "../../componnents/general/rest_card/RestCard";
 import { isOpenNow } from "../../utils/Utils";
 
 const allRestaurant = fetch(
-  "https://niv-epicure-back.onrender.com/restaurants"
+  // "https://niv-epicure-back.onrender.com/restaurants"
+  "http://localhost:8000/restaurants"
 )
   .then((response) => response.json())
   .then((data) => {
