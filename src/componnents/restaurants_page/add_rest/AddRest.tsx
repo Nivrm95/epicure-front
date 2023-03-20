@@ -84,7 +84,8 @@ const AddRest: React.FC<IAddRestProps> = ({ setShowAddModal }) => {
     // );
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/restaurants",
+        "https://niv-epicure-back.onrender.com/restaurants",
+        // "http://localhost:8000/restaurants",
         credentials
       );
       navigat("/RestaurantsPage");

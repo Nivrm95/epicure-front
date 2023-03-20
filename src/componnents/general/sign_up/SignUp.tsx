@@ -41,8 +41,8 @@ const SignUp: React.FC = () => {
 
     try {
       await axios
-        // .post("https://niv-epicure-back.onre/nder.comusers", body)
-        .post("http://localhost:8000/nder.comusers", body)
+        .post("https://niv-epicure-back.onre/nder.comusers", body)
+        // .post("http://localhost:8000/nder.comusers", body)
         .then((res) => console.log(res.data));
       navigate(-1);
     } catch (err: any) {

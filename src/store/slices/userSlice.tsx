@@ -16,8 +16,8 @@ export interface IUser {
   role: string;
 }
 
-// const allUsers = fetch("https://niv-epicure-back.onrender.com/users")
-const allUsers = fetch("http://localhost:8000/users")
+const allUsers = fetch("https://niv-epicure-back.onrender.com/users")
+// const allUsers = fetch("http://localhost:8000/users")
   .then((response) => response.json())
   .then((data) => {
     return data;
